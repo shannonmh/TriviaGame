@@ -51,9 +51,24 @@ $(".submit-btn").on("click", function () {
     console.log("you clicked the button");
     //alert("you clicked the submit button");
     $(".container").empty();
-    var selValue = $("input[name=bobBtn]:checked").val(); 
-    console.log(selValue);
-    $(".container").text("Number of correct answers: " + selValue);
+
+    var value1 = $("input[name='question1']:checked").val(); 
+    var value2 = $("input[name='question2']:checked").val(); 
+    var value3 = $("input[name='question3']:checked").val(); 
+    var value4 = $("input[name='question4']:checked").val(); 
+    var value5 = $("input[name='question5']:checked").val(); 
+    var value6 = $("input[name='question6']:checked").val(); 
+    var value7 = $("input[name='question7']:checked").val(); 
+    var value8 = $("input[name='question8']:checked").val(); 
+    var value9 = $("input[name='question9']:checked").val(); 
+    var value10 = $("input[name='question10']:checked").val(); 
+    var value11 = $("input[name='question11']:checked").val(); 
+
+    console.log(value1);
+    console.log(value2);
+    total = value1 + value2 + value3 + value4 + value5 + value6 + value7 + value8 + value9 + value10 + value11;
+    console.log(total);
+    $(".container").text("Number of correct answers: " + total);
 });
 
 $(".submit-btn").on("click", stop);
