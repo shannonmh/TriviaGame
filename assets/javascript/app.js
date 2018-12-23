@@ -1,7 +1,7 @@
 var minutes;
 var seconds;
 
-var time = 20;
+var time = 120;
 
 var intervalId;
 
