@@ -9,3 +9,11 @@
 .bottom-buffer {
     margin-bottom: 20px;
 }
+
+.main-background {
+    background-image: url(../../assets/images/regal.png);
+}
+
+.myth-background {
+    background-color: #d5a16f;
+}

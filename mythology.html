@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Trivia Game</title>
+
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+</head>
+
+<body class="myth-background">
+
+    <div class="title">
+        <!-- title card -->
+        <div class="row">
+            <div class="col-md-12 d-flex justify-content-center">
+                <img src="assets/images/mythology_header.jpg" alt="title card">
+            </div>
+        </div>
+
+        <div class="row top-buffer">
+            <div class="col-md-12">
+
+            </div>
+        </div>
+
+    </div>
+
+    <div class="timer">
+
+        <!-- trivia area -->
+        <div class="row bottom-buffer">
+            <div class="col-md-12 d-flex justify-content-center">
+                <h2>Time Remaining: <span id="time-left"></span> </h2>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="score">
+
+        <!-- trivia area -->
+        <div class="row bottom-buffer">
+            <div class="col-md-12 d-flex justify-content-center">
+                <h2 id="score"></h2>
+            </div>
+        </div>
+
+        <div class="row bottom-buffer">
+            <div class="col-md-12 d-flex justify-content-center">
+                <h2 id="wrong"></h2>
+            </div>
+        </div>
+
+        <div class="row bottom-buffer">
+            <div class="col-md-12 d-flex justify-content-center">
+                <h2 id="button"></h2>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="container">
+
+        <div class="row">
+            <div class="col-md-12 d-flex justify-content-center">
+                <h4>Who is the queen of the Underworld in Greek mythology?</h4>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 d-flex justify-content-center">
+                <form>
+                    <input type="radio" name="question1" value="0"> Eris
+                    <input type="radio" name="question1" value="1"> Persephone
+                    <input type="radio" name="question1" value="0"> Erebus
+                    <input type="radio" name="question1" value="0"> Nyx
+                </form>
+            </div>
+        </div>
+
+        <div class="row top-buffer">
+            <div class="col-md-12 d-flex justify-content-center">
+                <h4>In Japanese mythology, what is Amaterasu the goddess of?</h4>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 d-flex justify-content-center">
+                <form>
+                    <input type="radio" name="question2" value="0"> The ocean
+                    <input type="radio" name="question2" value="0"> Night
+                    <input type="radio" name="question2" value="0"> Fish
+                    <input type="radio" name="question2" value="1"> The sun
+                </form>
+            </div>
+        </div>
+
+        <div class="row top-buffer">
+            <div class="col-md-12 d-flex justify-content-center">
+                <h4>What is the name of the giant wolf who kills Odin during Ragnarok in Norse mythology?</h4>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 d-flex justify-content-center">
+                <form>
+                    <input type="radio" name="question3" value="0"> Finn
+                    <input type="radio" name="question3" value="0"> Loki
+                    <input type="radio" name="question3" value="1"> Fenrir
+                    <input type="radio" name="question3" value="0"> Tyr
+                </form>
+            </div>
+        </div>
+
+        <div class="row top-buffer">
+            <div class="col-md-12 d-flex justify-content-center">
+                <h4>In Egyptian mythology, who eats the hearts of the dead deemed unpure and unable to continue on to
+                    the immortality of the underworld?</h4>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 d-flex justify-content-center">
+                <form>
+                    <input type="radio" name="question4" value="1"> Ammit
+                    <input type="radio" name="question4" value="0"> Anubis
+                    <input type="radio" name="question4" value="0"> Ma'at
+                    <input type="radio" name="question4" value="0"> Thoth
+                </form>
+            </div>
+        </div>
+
+        <div class="row top-buffer">
+            <div class="col-md-12 d-flex justify-content-center">
+                <h4>What does the name of Quetzalcoatl mean in Aztec mythology?</h4>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 d-flex justify-content-center">
+                <form>
+                    <input type="radio" name="question5" value="0"> Great One
+                    <input type="radio" name="question5" value="0"> Wise Being
+                    <input type="radio" name="question5" value="1"> Feathered Serpent
+                    <input type="radio" name="question5" value="0"> Fast Serpant
+                </form>
+            </div>
+        </div>
+
+        <div class="row top-buffer">
+            <div class="col-md-12 d-flex justify-content-center">
+                <h4>Who is the mother of the Minotaur in Greek mythology?</h4>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 d-flex justify-content-center">
+                <form>
+                    <input type="radio" name="question6" value="0"> Helen
+                    <input type="radio" name="question6" value="1"> Pasiphaë
+                    <input type="radio" name="question6" value="0"> Athena
+                    <input type="radio" name="question6" value="0"> Hebe
+                </form>
+            </div>
+        </div>
+
+        <div class="row top-buffer">
+            <div class="col-md-12 d-flex justify-content-center">
+                <h4>In Japanese mythology, where can kappas be found?</h4>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 d-flex justify-content-center">
+                <form>
+                    <input type="radio" name="question7" value="0"> Forrests
+                    <input type="radio" name="question7" value="0"> Mountains
+                    <input type="radio" name="question7" value="1"> Rivers
+                    <input type="radio" name="question7" value="0"> In the snow
+                </form>
+            </div>
+        </div>
+
+        <div class="row top-buffer">
+            <div class="col-md-12 d-flex justify-content-center">
+                <h4>In Irish mythology, who is the warrior goddess who appears on the battlefield as a crow?</h4>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 d-flex justify-content-center">
+                <form>
+                    <input type="radio" name="question8" value="1"> Morrígan
+                    <input type="radio" name="question8" value="0"> Carman
+                    <input type="radio" name="question8" value="0"> Brigit
+                    <input type="radio" name="question8" value="0"> Anu
+                </form>
+            </div>
+        </div>
+
+        <div class="row top-buffer">
+            <div class="col-md-12 d-flex justify-content-center">
+                <h4>Who are the god and goddess who make up the sky and earth in Egyptian mythology?</h4>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 d-flex justify-content-center">
+                <form>
+                    <input type="radio" name="question9" value="0"> Anubis and Horus
+                    <input type="radio" name="question9" value="0"> Shu and Tefnut
+                    <input type="radio" name="question9" value="0"> Osiris and Isis
+                    <input type="radio" name="question9" value="1"> Nut and Geb
+                </form>
+            </div>
+        </div>
+
+        <div class="row top-buffer">
+            <div class="col-md-12 d-flex justify-content-center">
+                <h4>What is the name of the account of the mythology and history of Mayan mythology?</h4>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 d-flex justify-content-center">
+                <form>
+                    <input type="radio" name="question10" value="1"> Popal Vuh
+                    <input type="radio" name="question10" value="0"> Book of Hours
+                    <input type="radio" name="question10" value="0"> The Ximénez Book
+                    <input type="radio" name="question10" value="0"> Popal Xibalba
+                </form>
+            </div>
+        </div>
+
+        <div class="row top-buffer">
+            <div class="col-md-12 d-flex justify-content-center">
+                <h4>Who is the sorceress Circe's father in Greek mythology?</h4>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 d-flex justify-content-center">
+                <form>
+                    <input type="radio" name="question11" value="0"> Zeus
+                    <input type="radio" name="question11" value="1"> Helios
+                    <input type="radio" name="question11" value="0"> Apollo
+                    <input type="radio" name="question11" value="0"> Hades
+                </form>
+            </div>
+        </div>
+
+        <div class="row d-flex justify-content-center">
+            <button type="button" class="btn btn-light top-buffer bottom-buffer submit-btn">Submit</button>
+        </div>
+
+    </div>
+    <script src="assets/javascript/app.js"></script>
+
+</body>
+
+</html>
