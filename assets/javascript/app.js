@@ -47,7 +47,7 @@ function timeConverter(t) {
 $(".submit-btn").on("click", stop);
 
 $(".submit-btn").on("click", function () {
-    console.log("you clicked the button");
+    //console.log("you clicked the button");
     //alert("you clicked the submit button");
 
     var value1 = $("input[name='question1']:checked").val();
@@ -64,10 +64,10 @@ $(".submit-btn").on("click", function () {
 
     $(".container").empty();
 
-    console.log(value1);
-    console.log(value2);
+    // console.log(value1);
+    // console.log(value2);
     total = parseInt(value1) + parseInt(value2) + parseInt(value3) + parseInt(value4) + parseInt(value5) + parseInt(value6) + parseInt(value7) + parseInt(value8) + parseInt(value9) + parseInt(value10) + parseInt(value11);
-    console.log(total);
+    //console.log(total);
     $("#score").text("Number of correct answers: " + total);
     $("#wrong").text("Number of incorrect answers: " + (11 - total));
     var returnBtn = $("<button>").text("Return to Home")
